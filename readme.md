@@ -31,6 +31,13 @@ This step will pull the ruby 2.6 image from docker hub, install all necessary ge
 
 ensure the server is running by visiting <http://localhost:9292>
 
+Note: if you are facing issues with docker-compose, you can install the gems using <https://bundler.io/> and start local server via rackup
+
+``` bash
+> bundle install
+> rackup
+```
+
 ## Running the tests
 
 Unit tests can be run using the docker container using the following command
@@ -43,16 +50,20 @@ Unit tests can be run using the docker container using the following command
 ## Using the API
 
 * list all hotels
-..* GET <http://localhost:9292/hotel/>
+
+  GET <http://localhost:9292/hotel/>
 
 * get hotel via hotel id
-..* GET <http://localhost:9292/hotel/:id>
+
+  GET <http://localhost:9292/hotel/:id>
 
 * list all hotels by location
-..* GET <http://localhost:9292/location/>
+
+  GET <http://localhost:9292/location/>
 
 * list all hotels by specific location
-..* GET <http://localhost:9292/location/:id>
+
+  GET <http://localhost:9292/location/:id>
 
 ## Authors
 
