@@ -35,7 +35,7 @@ Note: if you are facing issues with docker-compose, you can install the gems usi
 
 ``` bash
 > bundle install
-> rackup
+> rackup config.ru
 ```
 
 ## Running the tests
