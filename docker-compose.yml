@@ -1,0 +1,22 @@
+version: '3'
+services:
+  # db:
+  #   image: postgres
+  #   volumes:
+  #     - pg_acenda:/var/lib/postgresql/data
+  #   ports:
+  #     - 5432:5432
+  #   env_file:
+  #     - ./config/.env
+  web:
+    build: .
+    ports:
+      - 9292:9292
+    # links:
+    #   - db
+    # depends_on:
+    #   - db
+    volumes:
+      - ./:/app
+# volumes:
+#   pg_acenda:
